@@ -1,0 +1,18 @@
+.btn {
+  border: 1px solid #c10303;
+  background: none;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.success {
+  border-color: #c10303;
+  color: #000;
+}
