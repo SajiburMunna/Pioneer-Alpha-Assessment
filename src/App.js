@@ -1,11 +1,12 @@
 import About from "./components/About/About";
 import Header from "./components/Header/Header";
+import styles from "./components/About/About.module.css";
 function App() {
   return (
     <div>
       <Header />
 
-      <div style={{ marginTop: "500px", marginBottom: "100px" }}>
+      <div className={styles.about}>
         <About />
       </div>
     </div>
