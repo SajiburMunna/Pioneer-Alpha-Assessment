@@ -1,5 +1,17 @@
 # Pioneer-Alpha-Frontend Developer(React)-Assessment-Task
+# Requirements :
+Responsive Page and Responsive Navbar. 
 # Technologies Used :
+1.React js.</br>
+2.Bootstrap.</br>
+3.css.</br>
+# Header Page 
+![image](https://user-images.githubusercontent.com/77797499/140567629-983628f2-b663-402e-a3ee-bdf290f76b2d.png)
+# About Us Page
+![image](https://user-images.githubusercontent.com/77797499/140567782-73dea603-f706-42b0-b7a3-1946e27946d1.png)
+# Web-Link
+LiveSite- https://pioneer-alpha-assessment-task.netlify.app/ </br>
+Download and enter "npm i" then "npm start" to run the project.
 
 
 
