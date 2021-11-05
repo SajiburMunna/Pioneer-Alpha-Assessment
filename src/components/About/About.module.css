@@ -1,10 +1,4 @@
 .about {
-  margin-top: 400px;
+  margin-top: 500px;
   margin-bottom: 100px;
-}
-
-@media only screen and (min-width: 1111px) {
-  .about {
-    margin-top: 400px;
-  }
 }
