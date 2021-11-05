@@ -3,8 +3,9 @@
 Responsive Page and Responsive Navbar. 
 # Technologies Used :
 1.React js.</br>
-2.Bootstrap.</br>
-3.css.</br>
+2.Js.</br>
+3.Bootstrap.</br>
+4.css.</br>
 # Header Page 
 ![image](https://user-images.githubusercontent.com/77797499/140567629-983628f2-b663-402e-a3ee-bdf290f76b2d.png)
 # About Us Page
