@@ -1,15 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Header.module.css";
 import HeaderContent from "./../HeaderContent/HeaderContent";
+import styles2 from "./Drawer.module.css";
 
 const Header = () => {
+  const [show, setShow] = useState(true);
   return (
     <div className={styles.headerBackground}>
-      <nav class="navbar navbar-expand-lg navbar-light  ">
+      <nav className={`"navbar  navbar-expand-lg navbar-light ${styles.nav}"`}>
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            Navbar
-          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -18,41 +17,71 @@ const Header = () => {
             aria-controls="navbarNav"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onClick={() => setShow(!show)}
           >
-            <span class="navbar-toggler-icon"></span>
+            {show ? <span class="navbar-toggler-icon"></span> : "X"}
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div
+            class={
+              show
+                ? "collapse navbar-collapse"
+                : `"collapse navbar-collapse ${styles2.sidebar}"`
+            }
+            id="navbarNav"
+          >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  Home
+                <a class="nav-link active " aria-current="page" href="/">
+                  <span className={styles.text}> Home</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Features
+                <a class="nav-link active" href="/">
+                  <span className={styles.text}> About</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Pricing
+                <a class="nav-link active" href="/">
+                  <span className={styles.text}>Service & Package</span>
                 </a>
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link disabled"
-                  href="#"
+                  class="nav-link active "
+                  href="/"
                   tabindex="-1"
                   aria-disabled="true"
                 >
-                  Disabled
+                  <span className={styles.text}> Gallery</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active "
+                  href="/"
+                  tabindex="-1"
+                  aria-disabled="true"
+                >
+                  <span className={styles.text}>Faq</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active "
+                  href="/"
+                  tabindex="-1"
+                  aria-disabled="true"
+                >
+                  <span className={styles.text}> Contact</span>
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <HeaderContent />
+      <div className={styles.content}>
+        <HeaderContent />
+      </div>
     </div>
   );
 };
